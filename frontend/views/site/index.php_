@@ -1,0 +1,38 @@
+
+      
+        <div class="articles">
+       
+        <?= \yii\widgets\ListView::widget([
+            'dataProvider' => $models,
+            'itemView'     => '_news_view', 
+            'layout'     => '{items}{pager}',
+      
+        ]); ?>
+       
+     
+            
+        </div>
+
+        <!-- Pager -->
+        <ul class="pager">
+          <li>
+          	<a href="#" class="btn btn-sm active">1</a>
+          </li>
+          <li>
+          	<a href="#" class="btn btn-sm">2</a>
+          </li>
+          <li>
+          	<a href="#" class="btn btn-sm">3</a>
+          </li>
+          <li>
+          	<a href="#" class="btn btn-sm">4</a>
+          </li>
+          <li>
+          	<a href="#" class="btn btn-sm disabled">...</a>
+          </li>
+          <li>
+          	<a href="#" class="btn btn-sm">755</a>
+          </li>
+        </ul>
+
+      

@@ -1,0 +1,109 @@
+
+<div class="tabsContent mainTabs maxtab">
+    <div class="tabsTL"></div>
+    <div class="tabsTR"></div>
+    <div class="tabsBL"></div>
+    <div class="tabsBR"></div>
+    <ul class="tabs t_wrap">
+        <li class="t_item">
+            <a class="t_link cur" href="#">Отзывы</a>
+
+            <div class="t_content">
+                <div class="add_ot">
+                    <span class="help_us">Помогите другим - напишите свой оызыв</span>
+			            		<span href="#" class="help_butt hb1">Разместить отзыв 
+			            			<span class="pp">------------------</span>
+			            		</span>
+			            		<span href="#" class="help_butt hb2">Свернуть форму 
+			            			<span class="pp">----------------</span>
+			            		</span>
+
+                    <form action="" class="add_otziv">
+                        <label for="about_product" class="inp1 vccc">Ваш отзыв о продукции:</label>
+                        <textarea name="about_product" id=""></textarea>
+
+                        <label for="about_store" class="inp1 vccc">Ваш отзыв о магазине:</label>
+                        <textarea name="about_store" id=""></textarea>
+
+                        <div class="dataa">
+                            <span class="help_us">Напишите немного о себе</span>
+
+                            <div class="data_labels">
+                                <label class="inp1" for="name">Ваше имя:
+                                    <input class="inputt" name="name" type="text">
+                                </label>
+                                <label class="inp1" for="city">Город:
+                                    <input class="inputt" name="city" type="text">
+                                </label>
+                                <label class="inp1" for="email">Email:
+                                    <input class="inputt" name="email" type="email">
+                                </label>
+                            </div>
+                        </div>
+                        <input type="submit" name="submit" class="send_otz" value="Разместить отзыв">
+                    </form>
+                </div>
+                <?= ListView::widget([
+                    'dataProvider' => $reviews,
+                'itemView' => '@app/views/site/_list_reviews',
+                'options' => [
+                'tag' => 'div',
+                ],
+                'itemOptions' => [
+                'tag' => false,
+                ],
+                'layout' => "{items}",
+                ]); ?>
+            </div>
+        </li>
+        <!-- .t_item -->
+        <li class="t_item">
+            <a class="t_link" href="#">Новости</a>
+
+            <div class="t_content">
+                <?= ListView::widget([
+                    'dataProvider' => $news,
+                'itemView' => '@app/views/site/_list_news',
+                'options' => [
+                'tag' => 'div',
+                ],
+                'itemOptions' => [
+                'tag' => false,
+                ],
+                'layout' => "{items}",
+                ]); ?>
+            </div>
+
+
+        </li>
+
+
+
+        <!-- .t_item -->
+        <li class="t_item">
+            <a class="t_link" href="#">Статьи</a>
+
+            <div class="t_content">
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                    literature, discovered the undoubtable source.</p>
+            </div>
+        </li>
+        <!-- .t_item -->
+        <li class="t_item">
+            <a class="t_link" href="#">Вопросы</a>
+
+            <div class="t_content">
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                    literature, discovered the undoubtable source.</p>
+            </div>
+        </li>
+        <!-- .t_item -->
+    </ul>
+    <!-- .tabs -->
+</div><!-- .tabsContent -->

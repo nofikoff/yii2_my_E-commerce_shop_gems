@@ -1,0 +1,24 @@
+#
+User-agent: *
+Disallow: /uk/*
+Disallow: /site/*
+Disallow: */shop/cart
+
+
+#Эти разрешаем
+#FilterForm[type]
+#FilterForm[color]
+#FilterForm[shape]
+#FilterForm[brand]
+#FilterForm[exclusive]
+#FilterForm[this_is_nabor]
+
+# Разрешили индексациюв в серч консоли URL params
+#Disallow: *FilterForm[action]*
+#Disallow: *FilterForm[treatment_type]*
+#Disallow: *FilterForm[priceFrom]*
+#Disallow: *FilterForm[priceTo]*
+#Disallow: *FilterForm[width]*
+#Disallow: *FilterForm[height]*
+
+

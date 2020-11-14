@@ -1,0 +1,136 @@
+
+
+
+
+
+
+.catalogList > div {
+display: inline-block;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+
+.subscribe input[type="email"] {
+    border: none;
+    width: 95px;
+    height: 18px;
+    padding: 2px 15px;
+    margin: 0;
+    font: 12px/18px Cuprum;
+    color: #000;
+    background: url(/pic/inputBg.png) 0 0 no-repeat;
+}
+.subscribe .field-subscribeform-email {
+    display: inline-block;
+}
+.subscribe button[type="submit"] {
+    color: #4d4d4d;
+    font: 12px/18px Cuprum;
+    text-align: center;
+    background: url(/pic/submitBg.png) 0 0 no-repeat;
+    width: 144px;
+    height: 26px;
+    padding: 1px 8px 3px 6px;
+    border: none;
+    text-shadow: 0 1px 0 #fff;
+    cursor: pointer;
+    margin: -2px 0 0 -10px;
+}
+
+
+.filterBlock select {
+    margin: 0;
+    width: 195px;
+    height: 30px;
+}
+.filterBlock label {
+    font: 14px/26px Cuprum;
+    color: #4d4d4d;
+    text-shadow: 0 1px 0 #fff;
+}
+.priceblock input {
+    width: 30px;
+}
+.priceblock input {
+    width: 80px;
+}
+.extra .fCut input {
+    /*display: none;*/
+}
+.extra .fCut label {
+    line-height: 16px;
+    padding-left: 20px;
+}
+.filtersize label {
+    display: block;
+    width: 100px;
+}
+.breadcrumbs li {
+    display: inline-block;
+    color: #b2265b;
+
+}
+.breadcrumbs ins {
+    color: grey;
+
+}
+.tovarMainContent  td button  {
+    /*display: none;*/
+}
+
+.remove {
+    padding: 0 15px !important;
+    border: none;
+}
+#cart .btn-update {
+    text-align: center;
+    margin-top: 2px;
+    font-size: 20px !important;
+    font-family: 'Cuprum' !important;
+    text-decoration: none !important;
+    line-height: 36px;
+    height: 36px;
+    float: left;
+    margin-right: 20px;
+    color: #4d4d4d;
+    width: 203px;
+    background: url(/pic/btn2.png) no-repeat center center;
+    border: none;
+    margin: 20px 0;
+}
+.fast_order input {
+    width: 146px;
+    border: none;
+    height: 22px;
+    padding-left: 25px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: 'Cuprum';
+    color: #B0B0B0;
+    background: url(/pic/bg1.png) center center no-repeat;
+}
+.fast_order button {
+    float: right;
+    margin-left: 20px;
+    color: #fff;
+    border: none;
+    width: 158px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 2px;
+    font-size: 20px !important;
+    font-family: 'Cuprum' !important;
+    text-decoration: none !important;
+    line-height: 36px;
+    height: 36px;
+    background: url(/pic/bg8.png) no-repeat center center;
+}

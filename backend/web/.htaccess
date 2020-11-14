@@ -1,0 +1,6 @@
+
+AuthGroupFile /dev/null
+AuthType Basic
+AuthUserFile /home/g/public_html/backend/web/.htpasswd
+AuthName "Novikov"
+require valid-user
